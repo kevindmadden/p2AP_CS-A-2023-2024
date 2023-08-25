@@ -3,7 +3,6 @@ package u01_theBasics;
 public class s02_CreatingMethods {
     public static void main(String[] args) {
         StdDraw.setScale(0,100);
-
         //Head
         StdDraw.setPenColor(StdDraw.YELLOW);
         StdDraw.filledCircle(75,75,20);
@@ -13,16 +12,21 @@ public class s02_CreatingMethods {
         //Mouth
         StdDraw.setPenColor(StdDraw.RED);
         StdDraw.filledEllipse(75,65,10,3);
-        //Eyes
+        drawEyes();
+
+        drawCircles();
+    }
+
+    public static void drawEyes(){
         StdDraw.setPenColor(StdDraw.WHITE);
         StdDraw.filledCircle(83,83,4);
         StdDraw.filledCircle(67,83,4);
         StdDraw.setPenColor(StdDraw.MAGENTA);
         StdDraw.filledCircle(83,82,3);
         StdDraw.filledCircle(67,82,3);
+    }
 
-
-        //cocentric circles
+    public static void drawCircles(){
         StdDraw.setPenColor(StdDraw.BLUE);
         StdDraw.setPenRadius(.05);
         StdDraw.circle(25,25,10);
@@ -38,7 +42,6 @@ public class s02_CreatingMethods {
         StdDraw.setPenColor(StdDraw.CYAN);
         StdDraw.setPenRadius(.05/16);
         StdDraw.circle(25,25,.75);
-
-
     }
+
 }
