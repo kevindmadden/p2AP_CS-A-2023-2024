@@ -1,6 +1,7 @@
 package u01_theBasics;
 
 public class s02_CreatingMethods {
+
     public static void main(String[] args) {
         StdDraw.setScale(0,100);
         //Head
