@@ -1,9 +1,17 @@
+import java.util.ArrayList;
+
 public class test {
 
 
     public static void main(String[] args) {
-        int[] arr1 = {1,2,3};
-        int[] arr2 = {1,2,3};
-        System.out.println(arr1==arr2);
+        ArrayList<String> things = new ArrayList<>();
+        things.add("hello");
+        things.add("world");
+        String temp = "hellow";
+        System.out.println(temp.toString());
+
+        int[][] arr = {{1,2,3},{3,3,0}};
+
+
     }
 }
